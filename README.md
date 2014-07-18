@@ -21,7 +21,12 @@ Adicionem ao local, global ou criem um arquivo cache.local.php em config/autoloa
 			},
 			
 // Adicionem os 2 controlesPlugins ao seu projeto
-
+'controller_plugins' => array (
+			'invokables' => array (
+						'MyCache'  => 'My\Controller\Plugin\MyCache'
+						)
+	),
+	
 // adicione ao seu Module.php
 		// loadcache
 		$eventManager->attach(MvcEvent::EVENT_ROUTE, array($this, 'loadCache'), 1);
