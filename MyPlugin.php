@@ -26,9 +26,5 @@ class MyPlugin extends AbstractPlugin implements ServiceLocatorAwareInterface{
 		$class = '\Application\Model\\QueueModel';
 		return new $class($adapter, $service);
 	}
-
-	protected function getViewHelper($viewHelper)
-	{
-		return $this->getServiceLocator()->get('viewhelpermanager')->get($viewHelper);
-	}
+	
 }
