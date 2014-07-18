@@ -33,12 +33,13 @@ Adicionem ao local, global ou criem um arquivo cache.local.php em config/autoloa
 		// salvecache
 		$eventManager->attach(MvcEvent::EVENT_FINISH, array($this, 'loadCache'), -100);
     
-  public function loadCache(MvcEvent $e)
+	public function loadCache(MvcEvent $e)
 	{
+		return;
 		if(MvcEvent::EVENT_ROUTE == 'route')
 			$function = 'get';
 		if(MvcEvent::EVENT_ROUTE == 'finish')
-			$funcion = 'save';
+			$function = 'save';
 			
 		$application   = $e->getApplication();
 		$sm			= $application->getServiceManager();
