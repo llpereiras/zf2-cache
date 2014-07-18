@@ -1,7 +1,7 @@
 zf2-cache
 =========
 
-ControllerPlugin para Zend framework 2
+ControllerPlugin para Zend framework 2 
 
 Adicionem ao local, global ou criem um arquivo cache.local.php em config/autoload e adicionem suas configurações de cache
 
