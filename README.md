@@ -6,6 +6,7 @@ ControllerPlugin para Zend framework 2
 Adicionem ao local, global ou criem um arquivo cache.local.php em config/autoload e adicionem suas configurações de cache
 
 //// Ex: cache
+
 	'Zend\Cache\Storage\Filesystem' => function($sm){
 		$cache = Zend\Cache\StorageFactory::factory(array(
 			'adapter' => 'filesystem',
