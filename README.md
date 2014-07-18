@@ -45,7 +45,7 @@ Adicionem ao local, global ou criem um arquivo cache.local.php em config/autoloa
 		$router = $sm->get('router');
 		$request = $sm->get('request');
 		$matchedRoute = $router->match($request);
-		$sm->get('ControllerPluginManager')->get('MyCache')->get($funcion,$sm, $e, $matchedRoute);
+		$sm->get('ControllerPluginManager')->get('MyCache')->get($function,$sm, $e, $matchedRoute);
 	}
 	
 E seja feliz.
